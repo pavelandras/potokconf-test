@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 body {
@@ -30,28 +33,35 @@ header {
 }
 
 header .burger-logo {
-  width: 24px;
-  height: 24px;
+  width: 1.7em;
+  height: 1.7em;
 }
 
 header .burger-logo img {
-  width: 24px;
-  height: 24px;
+  width: 1.7em;
+  height: 1.7em;
 }
 
 header .filter-logo {
-  width: 20px;
-  height: 20px;
+  width: 1.2em;
+  height: 1.2em;
 }
 
 header .filter-logo img {
-  width: 20px;
-  height: 20px;
+  width: 1.2em;
+  height: 1.2em;
 }
 
 header .company-logo {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -60,16 +70,100 @@ header .company-logo {
 }
 
 header .company-logo img {
-  width: 24px;
-  height: 24px;
-  padding: 5px;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.5em;
 }
 
 header .company-logo h1 {
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0.2em;
 }
 
-.company-logo {
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+main .container {
+  border: 2px solid #eaeff2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 45% 45% auto;
+      grid-template-rows: 45% 45% auto;
+  margin: 15px 15px 0px 15px;
+}
+
+main .container .image img {
+  width: 100%;
+  height: 100%;
+}
+
+main .container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .container .description h2 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+main .container .description h3 {
+  font-size: 1.0em;
+  font-weight: 400;
+  color: #a6b6b6;
+}
+
+main .container .description hr {
+  width: 1.5em;
+  height: 0.2em;
+  color: #06ca55;
+  background-color: #06ca55;
+  border: none;
+}
+
+main .container .description p {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #a6b6b6;
+}
+
+main .container .info {
+  background-color: #eaeff2;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .info p {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,16 +175,7 @@ header .company-logo h1 {
           align-items: center;
 }
 
-a.more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+footer a {
   text-decoration: none;
   color: #000;
 }

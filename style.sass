@@ -1,0 +1,54 @@
+=flexcenter()
+    display: flex
+    justify-content: center
+    align-items: center
+
+html, body
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+
+body
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 10% 80% 10%
+
+header
+    display: inline-grid
+    grid-template-columns: 15% auto 15%
+    justify-items: center
+    align-items: center
+    background-color: rgb(21, 34, 53)
+    color: #FFF
+    position: static
+    .burger-logo
+        width: 24px
+        height: 24px
+        img
+            width: 24px
+            height: 24px
+    .filter-logo
+        width: 20px
+        height: 20px
+        img
+            width: 20px
+            height: 20px
+    .company-logo
+        display: flex
+        flex-direction: row
+        img
+            width: 24px
+            height: 24px
+            padding: 5px
+        h1
+            font-size: 20px
+
+.company-logo
+    +flexcenter()
+
+a.more
+    +flexcenter()
+    text-decoration: none
+    color: #000

@@ -1,1 +1,97 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 10% 80% 10%;
+      grid-template-rows: 10% 80% 10%;
+}
+
+header {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 15% auto 15%;
+      grid-template-columns: 15% auto 15%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #152235;
+  color: #FFF;
+  position: static;
+}
+
+header .burger-logo {
+  width: 24px;
+  height: 24px;
+}
+
+header .burger-logo img {
+  width: 24px;
+  height: 24px;
+}
+
+header .filter-logo {
+  width: 20px;
+  height: 20px;
+}
+
+header .filter-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+header .company-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .company-logo img {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+}
+
+header .company-logo h1 {
+  font-size: 20px;
+}
+
+.company-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */

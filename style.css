@@ -9,15 +9,6 @@ html, body {
   text-align: center;
 }
 
-body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: 10% 80% 10%;
-      grid-template-rows: 10% 80% 10%;
-}
-
 header {
   display: -ms-inline-grid;
   display: inline-grid;
@@ -30,6 +21,7 @@ header {
   background-color: #152235;
   color: #FFF;
   position: static;
+  width: 100%;
 }
 
 header .burger-logo {
@@ -86,22 +78,56 @@ main {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
+  -ms-grid-rows: 50%;
+      grid-template-rows: 50%;
 }
 
 main .container {
   border: 2px solid #eaeff2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 45% 45% auto;
-      grid-template-rows: 45% 45% auto;
+  -ms-grid-rows: auto 5fr 1fr;
+      grid-template-rows: auto 5fr 1fr;
   margin: 15px 15px 0px 15px;
+}
+
+main .container .image {
+  position: relative;
 }
 
 main .container .image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+main .container .image .image-footer {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 6fr 1fr;
+      grid-template-columns: 6fr 1fr;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+main .container .image .image-footer h3 {
+  margin-left: 10px;
+  font-size: 1.0em;
+  font-weight: 300;
+  color: #FFF;
+  padding-left: 8px;
+}
+
+main .container .image .image-footer img {
+  background-color: #06ca55;
+  height: auto;
+  width: 100%;
 }
 
 main .container .description {
@@ -119,6 +145,7 @@ main .container .description {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin: 10px;
 }
 
 main .container .description h2 {
@@ -148,14 +175,26 @@ main .container .description p {
 
 main .container .info {
   background-color: #eaeff2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .container .info div {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .container .info img {
+  width: 15px;
+  height: auto;
 }
 
 main .container .info p {
@@ -173,6 +212,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
 }
 
 footer a {
